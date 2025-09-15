@@ -28,5 +28,5 @@ Among the models I tried, a **Decision Tree (DT-3)** had the best performance ma
 
 Since this dataset was synthetic, I decided not using the model directly in clinical practice.
 For me, the results are more of a **proof of concept**. 
-The model neeed to trained and validated on actual patient data."""
+The model neeed to trained and validated on actual patient data. </div>"""
 )
