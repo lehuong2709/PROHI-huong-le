@@ -108,7 +108,7 @@ st.dataframe(df, use_container_width=True)
 
 #Adding a chart
 
-st.subheader("Mental Health Score by Gender (example chart)")
+st.subheader("Mental Health Score by Gender")
 
 # Group by gender and calculate average score
 chart_data = df.groupby("Gender")["Mental Health Score"].mean().reset_index()
