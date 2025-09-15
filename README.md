@@ -1,10 +1,8 @@
 # PROHI Dashboard Example
 
 **Author**: Huong Le
-<!-- As main author, do not write anything in the line below.
-The collaborator will edit the line below in GitHub -->
-**Collaborator**: Xue WU
-### Hello!!! Nice to meet you!!!
+**Collaborator**: Xue Wu
+
 _Note that this file is written in **MarkDown** language. A reference is available here: <https://www.markdownguide.org/basic-syntax/>_
 
 _Here you can include images, like the logo from SU_
@@ -13,11 +11,31 @@ _Here you can include images, like the logo from SU_
 
 ## Introduction
 
-_This template project will contain a simple interactive web dashboard with Streamlit. Feel free to edit this document as desired_
+This project is a simple interactive web dashboard built with [Streamlit]
+Local URL: http://localhost:8501
+Network URL: http://192.168.0.19:8501
+It was developed as part of the DSHI course and demonstrates how to organize a dashboard with input widgets, synthetic data, and a chart, as well as an additional About page.
 
 ## System description
 
-### Installation of libraries
+ Dashboard page:
+  - 3+ input widgets (gender, health conditions, mental health score)  
+  - 1 data element (synthetic participant table)  
+  - 1 chart (average mental health score by gender)  
+
+About page:
+  - Author name and project title  
+  - 100–150 word Markdown summary of the semester project
+
+## Screenshots
+### Dashboard Page
+![Dashboard Screenshot](screenshots/dashboard 1.png)
+![Dashboard Screenshot](screenshots/dashboard 2.png)
+
+### About Page
+![About Screenshot](screenshots/about.png)
+
+### Installation of libraries: Intruction to run Streamlit, i won't delete to use later if needed.
 
 Run the commands below in a terminal to configure the project and install the package dependencies for the first time.
 
