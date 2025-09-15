@@ -11,9 +11,10 @@ _Here you can include images, like the logo from SU_
 
 ## Introduction
 
-This project is a simple interactive web dashboard built with [Streamlit]
-Local URL: http://localhost:8501
-Network URL: http://192.168.0.19:8501
+This project is a simple interactive web dashboard built with [Streamlit].
+- Local URL: http://localhost:8501
+- Network URL: http://192.168.0.19:8501
+
 It was developed as part of the DSHI course and demonstrates how to organize a dashboard with input widgets, synthetic data, and a chart, as well as an additional About page.
 
 ## System description
@@ -25,12 +26,13 @@ It was developed as part of the DSHI course and demonstrates how to organize a d
 
 About page:
   - Author name and project title  
-  - 100–150 word Markdown summary of the semester project
+  - Summary of the last semester project
 
 ## Screenshots
 ### Dashboard Page
-![Dashboard Screenshot](screenshots/dashboard 1.png)
-![Dashboard Screenshot](screenshots/dashboard 2.png)
+![Dashboard Screenshot](screenshots/dashboard1.png)
+
+![Dashboard Screenshot](screenshots/dashboard2.png)
 
 ### About Page
 ![About Screenshot](screenshots/about.png)
