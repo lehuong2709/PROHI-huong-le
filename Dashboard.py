@@ -57,3 +57,61 @@ enhance the problem domain related to the selected dataset.
 #     'Select a range of values',
 #     0.0, 100.0, (25.0, 75.0)
 # )
+
+import numpy as np
+import pandas as pd
+
+#Adding sidebar input widgets:
+with st.sidebar.expander("Participant Info", expanded=True):
+    gender = st.selectbox(
+        "Gender",
+        ["Male", "Female", "Other"]
+    )
+
+    conditions = st.multiselect(
+        "Health conditions",
+        ["Diabetes", "Hypertension", "Asthma", "Depression", "None"],
+        default=["None"]
+    )
+
+    other_condition = st.text_input("Other condition (if not listed)")
+
+    # Append free-text to list if user writes something
+    if other_condition:
+        conditions.append(other_condition)
+
+    mental_score = st.slider(
+        "Mental health score (self-rated)",
+        min_value=0,
+        max_value=100,
+        value=50,
+        step=5
+    )
+       
+#Adding one element for Data
+st.divider()
+st.subheader("Participant Data Table")
+
+
+# Generate synthetic demo data
+rng = np.random.default_rng(42)
+n = 10
+df = pd.DataFrame({
+    "ID": np.arange(1, n + 1),
+    "Age": rng.integers(18, 70, size=n),
+    "Gender": rng.choice(["Male", "Female", "Other"], size=n),
+    "Mental Health Score": rng.integers(30, 95, size=n)
+})
+
+# Display the table
+st.dataframe(df, use_container_width=True)
+
+#Adding a chart
+
+st.subheader("Mental Health Score by Gender (example chart)")
+
+# Group by gender and calculate average score
+chart_data = df.groupby("Gender")["Mental Health Score"].mean().reset_index()
+
+# Display as a bar chart
+st.bar_chart(chart_data.set_index("Gender"))
