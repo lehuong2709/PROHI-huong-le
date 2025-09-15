@@ -31,12 +31,12 @@ About page:
 
 ## Screenshots
 ### Dashboard Page
-![Dashboard Screenshot](screenshots/dashboard1.png)
+![Dashboard Screenshot](assets/screenshots/dashboard1.png)
 
-![Dashboard Screenshot](screenshots/dashboard2.png)
+![Dashboard Screenshot](assets/screenshots/dashboard2.png)
 
 ### About Page
-![About Screenshot](screenshots/about.png)
+![About Screenshot](assets/screenshots/about.png)
 
 ### Installation of libraries: Intruction to run Streamlit, i won't delete to use later if needed.
 
