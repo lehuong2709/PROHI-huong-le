@@ -1,6 +1,7 @@
 # PROHI Dashboard Example
 
 **Author**: Huong Le
+
 **Collaborator**: Xue Wu
 
 _Note that this file is written in **MarkDown** language. A reference is available here: <https://www.markdownguide.org/basic-syntax/>_
@@ -75,4 +76,4 @@ Tested on Python 3.12.7 with the following packages:
 
 ## Contributors
 
-_Add the project's authors, contact information, and links to websites or portfolios._
+Link to website: http://localhost:8501
